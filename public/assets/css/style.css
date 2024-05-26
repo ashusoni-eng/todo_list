@@ -1,0 +1,79 @@
+.layouts .container .card{
+    height: 90vh;
+    width: 40vw;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.layouts .container{
+    display: grid;
+    place-items: center;
+    height: 95vh;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    z-index: 9999;    
+}
+
+#loader .bar {
+    width: 0;
+    height: 100%;
+    background-color: #3498db;
+    animation: loading 2s infinite;
+    display: none;
+}
+.addtaskInput div:nth-child(1){
+   align-items: center;   
+   margin: auto;
+}
+table{
+    font-size: .8rem;
+}
+.table-responsive{
+    width: 35vw;
+    overflow: hidden;
+}
+.table{
+    max-width: 100%;
+}
+.showAll{    
+    width: 8rem;    
+    position: absolute;
+    bottom:1rem;    
+    cursor: pointer;    
+    color:gray;
+}
+.showAll:hover{    
+    color: black;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+}
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@media screen and (max-width: 480px) {
+    .layouts .container .card{        
+        width: 90vw;        
+    }
+    .table-responsive{
+        width: 88vw;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .layouts .container .card{        
+        width: 90vw;        
+    }
+    .table-responsive{
+        width: 88vw;
+    }
+}
+
